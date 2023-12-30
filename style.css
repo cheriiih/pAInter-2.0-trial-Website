@@ -123,17 +123,18 @@ header {
 
 .sec {
     position: relative;
+    top: 200px;
     background: #795eb6;
     padding: 150px;
 }
 
 section::before{
     content: '';
-    position: absolute;
-    bottom: 0px;
+    position: relative;
+    bottom: -500px;
     left: 0;
     width: 100%;
-    height: 100px;
+    height: 200px;
     background: linear-gradient(to top,#795eb6, transparent);
     z-index: 10;
   }
@@ -150,6 +151,180 @@ section::before{
     color: #ffffff;
     font-weight: 300;
 }
+
+
+@media screen and (max-width: 960px) {
+  
+.parallax {
+height: 60vh;
+    }
+
+  .logo {
+    font-size: 1.5em;
+    margin-right: 150px;
+
+  }
+
+  .navigation a {
+    font-size: 0.9em;
+    padding: 8px 12px;
+  }
+
+  .parallax {
+    height: 60vh;
+  }
+
+  #digitalartist {
+    top: 200px;
+  }
+
+  #paintdrop1 {
+      top: 150px;
+  }
+
+  #paintdrop2 {
+      top: 150px;
+  }
+
+  #bigpaintpurple {
+    top: 150px;
+  }
+
+  #text1 {
+      font-size: 3em;
+      height: 100px;
+      
+  }
+
+  #text2 {
+      font-size: 3.5em;
+      height: 10px;
+  }
+
+  #text3 {
+      font-size: 2em;
+      transform: translateY(70px);
+  }
+
+  #btn {
+      font-size: 1.5em;
+      transform: translateY(150px);
+     
+  }
+
+  .sec {
+    position: relative;
+    top: 300px;
+    background: #795eb6;
+    padding: 200px;
+}
+
+section::before{
+    content: '';
+    position: relative;
+    bottom: -450px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to top,#795eb6, transparent);
+    z-index: 10;
+
+}
+}
+
+
+/* Tablet styles */
+@media only screen and (max-width: 768px) {
+    header {
+      padding: 20px;
+    }
+  
+    .logo {
+      margin-right: 0;
+    }
+  
+    .navigation {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background-color: #ffffff;
+      z-index: 99;
+    }
+  
+    .navigation a {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .navigation.active {
+      display: flex;
+    }
+  
+    .parallax {
+      height: 80vh;
+    }
+  
+    #digitalartist {
+      top: 220px;
+    }
+  
+    #bigpaintpurple {
+      top: 190px;
+    }
+    #paintdrop1 {
+        top: 190px;
+    }
+
+    #paintdrop2 {
+        top: 190px;
+    }
+
+    #text1 {
+        font-size: 2em;
+        height: 250px;
+    }
+
+    #text2 {
+        font-size: 2.5em;
+        height: 190px;
+    }
+
+    #text3 {
+        font-size: 1em;
+        height: 230px;
+    }
+
+    #btn {
+        font-size: 1em;
+        transform: translateY(5px);
+       
+    }
+
+    
+  .sec {
+    position: relative;
+    top: 50px;
+    background: #795eb6;
+    padding: 150px;
+}
+
+section::before{
+    content: '';
+    position: relative;
+    bottom: -190px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to top,#795eb6, transparent);
+    z-index: 10;
+
+
+  }
 
 
 
@@ -173,7 +348,7 @@ section::before{
     }
   
     #digitalartist {
-      top: 200px;
+      top: 230px;
     }
   
     #paintdrop1 {
@@ -185,7 +360,7 @@ section::before{
     }
 
     #bigpaintpurple {
-      top: 200px;
+      top: 220px;
     }
 
     #text1 {
@@ -200,25 +375,47 @@ section::before{
 
     #text3 {
         font-size: 1em;
-        height: 10px;
+        height: 170px;
     }
 
     #btn {
         font-size: 1em;
-        transform: translateY(50px);
+        transform: translateY(35px);
        
     }
+.sec {
+    position: relative;
+    top: 40px;
+    background: #795eb6;
+    padding: 150px;
+    text-align: center;
+    width: 100%;
+}
 
-    #sec {
-        font-size: 1em;
-        transform: translateY(50px);
-    }
-
-    .sec h2 {
-        font-size: 1em;
-        text-align: center;
-        white-space: nowrap;
-        margin: 0;
-    }
+section::before{
+    content: '';
+    position: relative;
+    bottom: -170px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#795eb6, transparent);
+    z-index: 10;
   }
+
+  .sec h2 {
+    font-size: 3em;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 10px;
   
+    
+  }
+
+  .sec p {
+    font-size: 1em;
+    color: #ffffff;
+    font-weight: 300;
+    text-align: center;
+}
+  }
