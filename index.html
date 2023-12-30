@@ -1,23 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PAInter Trial Website</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <header>
-        <h2 class="logo">pAInter</h2>
-        <nav class="navigation">
-            <a href="#" class="active">Home</a>
-            <a href="#">Service</a>
-            <a href="#">Blogs</a>
-            <a href="#">About</a>
+        <div class="logo" id="painter">pAInter</div>
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
+            <ul>
+                <li>
+                    <a href="" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="">Service</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+            </ul>
         </nav>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
     </header>
-    <section class="parallax">
+
+    <section>
         <h1 id="text1"> FIGHT</h1>
         <h2 id="text2"> BURN OUT</h2>
         <p id="text3"> with AI.</p>
@@ -28,10 +45,23 @@
         <img src="images/digitalartist.png" id="digitalartist">
     </section>
 
-    <section class="sec">
+    <div class="sec">
       <h2>pAInter helps you with</h2>
-      <p>Creative Excersises</p>
-    </section>
+      <p>Creative Excersises Creative ExcersisesCreative ExcersisesCreative 
+        ExcersisesCreative ExcersisesCreative ExcersisesCreative ExcersisesCreative 
+        ExcersisesCreative ExcersisesCreative ExcersisesCreativeExcersisesCreative 
+         ExcersisesCreative ExcersisesCreative ExcersisesCreative ExcersisesCreative 
+          ExcersisesCreative ExcersisesCreative ExcersisesCreative Excersises</p>
+      </div>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function () {
+            navigation = document.querySelector(".navigation");
+            navigation.classList.toggle("active");
+        }
+    </script>
+    
 
     <script src="app.js"></script>
 </body>

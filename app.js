@@ -21,7 +21,7 @@ window.addEventListener('scroll', () => {
     text2.style.zIndex = -2;
     text3.style.zIndex = -2;
     btn.style.zIndex = -1;
+    
   
    
 });
-
