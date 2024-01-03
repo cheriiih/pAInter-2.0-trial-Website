@@ -6,6 +6,8 @@
 
         <!--========== BOX ICONS ==========-->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
 
         <!--========== CSS ==========-->
         <link rel="stylesheet" href="style.css">
@@ -21,29 +23,29 @@
 
         <!--========== HEADER ==========-->
         <header>
-            <div class="logo">pAInter</div>
-            <input type="checkbox" id="nav_check" hidden>
+            <div class="logo">
+                <a href="#">
+                <img src="images/pinklogo.png" alt="pAInter Logo">
+                <a class="footer-title">pAInter</a>
+            </a>
+            </div>
+            
             <nav>
+                <ul class="sidebar">
+                    <li onclick="hideSidebar()"><a href="#"><i class="ri-close-line" id="nav-close"></i></a></li>
+                    <li ><a href="index.html" class="navhome active" >Home</a></li>
+                    <li ><a href="service.html" class="navhome">Service</a></li>
+                    <li ><a href="blog.html" class="navhome">Blog</a></li>
+                    <li ><a href="about.html" class="navhome">About</a></li>
+                </ul>
                 <ul>
-                    <li>
-                        <a href="index.html" class="active">Home</a>
-                    </li>
-                    <li>
-                        <a href="service.html">Service</a>
-                    </li>
-                    <li>
-                        <a href="blog.html">Blog</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
+                    <li class="hideOnMobile"><a href="index.html" class="navhome active" >Home</a></li>
+                    <li class="hideOnMobile"><a href="service.html" class="navhome">Service</a></li>
+                    <li class="hideOnMobile"><a href="blog.html" class="navhome">Blog</a></li>
+                    <li class="hideOnMobile"><a href="about.html" class="navhome">About</a></li>
+                    <li onclick="showSidebar()"><a href="#"><i class="ri-menu-3-line" id="nav-menu"></i></a></li>
                 </ul>
             </nav>
-            <label for="nav_check" class="hamburger">
-                <div></div>
-                <div></div>
-                <div></div>
-            </label>
         </header>
 
             <!--========== HOME ==========-->
@@ -60,7 +62,8 @@
             </section>
 
             <!--========== ABOUT ==========-->
-            <section class="about section bd-container" id="about">
+            <section class="about section bd-container" id="about"> 
+                
                 <div class="about__container  bd-grid">
                     <div class="about__data">
                         <span class="section-subtitle about__initial">About us</span>
@@ -68,7 +71,7 @@
                         <p class="about__description">We give you all the tools you need, with a community inspired to help you too
                             We give you all the tools you need, with a community inspired to help you tooWe give you all the tools you need, with a community inspired to help you too
                         </p>
-                        <a href="#" class="button" id="explore">Explore history</a>
+                        <a href="about.html" class="button" id="explore">Explore history</a>
                     </div>
 
                     <img src="images/dog.jpg" alt="" class="about__img">
@@ -101,12 +104,58 @@
                         <p class="services__description">We connect you with a supportive community</p>
                     </div>
 
+                    <div class="custom-shape-divider-top-1704222441">
+                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                        </svg>
+                    </div>
                    
                 </div>
             </section>
+        <!--========== START ==========-->
+            <section class="start-journey">
+                <h3 class="start-title"> Ready to spark your creativity? </h3>
+                <a href="service.html" class="start-button">Start</a>
 
+                <div class="custom-shape-divider-top-1704223475">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                    </svg>
+                </div>
+            </section>
           
         <!--========== FOOTER ==========-->
+        <footer class="footer">
+            <div class="group-1">
+                <div class="box">
+                    <figure>
+                        <a href="#">
+                            <img src="images/painterlogo.png" alt="pAInter Logo">
+                            <a class="footer-title">pAInter</a>
+                        </a>
+                    </figure>
+                </div>
+                <div class="box" id="quicklinks">
+                    <ul>
+                        <li><a id="fhome">Home</a></li>
+                        <li><a id="fservice">Service</a></li>
+                        <li><a id="fblog">Blog</a></li>
+                        <li><a id="fabout">About</a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h2 id="reachus">REACH US</h2>
+                    <div class="social-media">
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-google"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="group-2">
+                <small> 2024 - All drawings were made by <b>Cheri Ho</b>.</small>
+            </div>
+        </footer>
+
     
         
 
