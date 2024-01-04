@@ -66,6 +66,10 @@ header nav ul li a.active {
     background: #ff6e6c;
 }
 
+section {
+    position: relative;
+}
+
 .post-header {
     width: 100%;
     height: 300px;
@@ -104,6 +108,10 @@ header nav ul li a.active {
 
 }
 
+.date {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
 .header-img {
     width: 100%;
     height: 400px;
@@ -140,6 +148,8 @@ header nav ul li a.active {
     font-size: 1.1em;
     font-weight: 100;
 }
+
+
 
 @media only screen and (max-width: 900px) {
     header {
