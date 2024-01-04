@@ -11,7 +11,7 @@ window.addEventListener('scroll', function() {
     let value = window.scrollY;
 
     // Set maximum and minimum values for marginTop
-    let marginTopValue = Math.min(Math.max(value * 2.5, 0), 900);
+    let marginTopValue = Math.min(Math.max(value * 2.5, 0), 1200);
     text1.style.marginTop = marginTopValue + 'px';
     text2.style.marginTop = marginTopValue + 'px';
     text3.style.marginTop = marginTopValue + 'px';

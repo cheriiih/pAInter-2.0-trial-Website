@@ -10,62 +10,212 @@
     box-sizing: border-box;
 
 }
+/*========== HEADER ==========*/
 
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-}
-
-body {
-    background: #FFFFFF;
-    margin: 0px;
-    padding: 0px;
-}
 header {
     background: #fff;
     width: 100%;
-    height: 70px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 50px;
-}
-header .logo {
+    z-index: 1000;
+    position: relative;
+    margin-top: 10px;
+  }
+  header .logo {
     font-size: 2em;
     color: #ff6e6c;
-}
-header nav ul {
     display: flex;
-}
-header nav ul li a {
+    height: 80px;
+    margin-right: 10px; 
+    align-items: center; 
+  }
+  
+  .logo img {
+    display: flex;
+    width: 50px;
+    margin-top: 15px; 
+    margin-bottom: 10px; 
+    margin-right: 10px;
+    color: #FF6E6C;
+  }
+  
+  
+  /* Scroll top */
+  .scrolltop{
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #ffcc5d;
+    border-radius: 20px;
+    z-index: 999;
+    transition: .4s;
+    visibility: hidden;
+  }
+  
+  .scrolltop:hover{
+    background-color: #67568c;
+  }
+  
+  .scrolltop_icon {
+    font-size: 3em;
+    color: #ffffff;
+  }
+  
+  /* Show scrolltop */
+  .show-scroll{
+    visibility: visible;
+    bottom: 1.5rem;
+  }
+  
+  /*========== NAV ==========*/
+  body {
+    background: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  nav li {
+    height: 40px;
+  }
+
+  .logo-title {
+    font-weight: 600;
+  }
+  
+  
+  .navhome{
     display: inline-block;
     color: #ff6e6c;
-    padding: 5px 15px;
+    padding: 5px 25px;
     margin: 0 10px;
     border: 3px solid transparent;
     text-transform: uppercase;
     transition: 0.2s;
     border-radius: 20px;
-}
-header nav ul li a:hover,
-header nav ul li a.active {
+    font-weight: 600;
+    border: 0;
+  }
+  
+  .sidebar {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: hsla(0, 0%, 100%, 0.685);
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  .sidebar li{
+    width: 100%;
+  }
+  
+  
+  #nav-close {
+    color: #FF6E6C;
+    padding: 0;
+    font-size: 40px;
+    padding-left: 200px;
+    margin-top: 0;
+  }
+  
+  #nav-menu {
+    display: none;
+    font-size: 30px;
+    background-color: #FFFFFF;
+    
+  }
+  
+  .navhome:hover, header nav ul li a.active {
     background-color: #ff6e6c;
     color: #FFFFFF;
-}
-.hamburger {
-    cursor: pointer;
-    display: none;
-}
-.hamburger div {
-    width: 30px;
-    height: 3px;
-    margin: 5px 0;
-    background: #ff6e6c;
-}
+  }
+  
+  
+  @media(max-width:800px){
+    .hideOnMobile{
+        display: none;
+    }
+    #nav-menu {
+        display: block;
+        color: #FF6E6C;
+    }
+  
+    header {
+      padding: 10px;
+    }
+  }
+  
+  @media(max-width:400px){
+    .hideOnMobile{
+        width: 100px;
+    }
+  
+    
+  }
 
+  
+/* Scroll top */
+.scrolltop{
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #ffcc5d;
+    border-radius: 20px;
+    z-index: 9999;
+    transition: .4s;
+    visibility: hidden;
+  }
+  
+  .scrolltop:hover{
+    background-color: #67568c;
+  }
+  
+  .scrolltop_icon {
+    font-size: 3em;
+    color: #ffffff;
+  }
+  
+  /* Show scrolltop */
+  .show-scroll{
+    visibility: visible;
+    bottom: 1.5rem;
+  }
+  
+  
+
+/*========== POST ==========*/
+
+   
 section {
     position: relative;
 }
@@ -110,7 +260,8 @@ section {
 
 .date {
     color: #ffffff;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 .header-img {
     width: 100%;
@@ -121,7 +272,7 @@ section {
 }
 
 .post-content {
-    margin-top: 23em;
+    margin-top: 400px;
 }
 
 .sub-heading {
@@ -151,13 +302,154 @@ section {
 
 
 
-@media only screen and (max-width: 900px) {
-    header {
-        padding: 0 30px;
-    }
-}
+/*========== FOOTER ==========*/
+.footer {
+    width: 100%;
+    background-color: #795eb6;
+  }
+  
+  .footer .group-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 50px;
+    padding: 10px 0px;
+  }
+  
+  .footer .group-1 .box figure {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+  }
+  
+  .footer .group-1 .box figure img {
+    width: 90px;
+    margin-right: 20px; 
+    margin-left: 30px;
+    margin-left: 0;
+  }
+  
+  .footer .group-1 .box h2.footer-title {
+    margin: 0;
+  }
+  
+  
+  #quicklinks ul li a {
+    display: inline-block;
+    padding: 5px 15px;
+    margin-top: 25px;
+    border: 3px solid transparent;
+    text-transform: uppercase;
+    transition: 0.2s;
+    border-radius: 20px;
+  }
+  
+  #quicklinks ul li a:hover,
+  #quicklinks ul li a.active {
+    color: #ff6e6c;
+  }
+  
+  .footer .group-1 .social-media a {
+    display: inline-block;
+    text-decoration: none;
+    width: 0px;
+    height: 45px;
+    line-height: 45px;
+    color: #ffffff;
+    margin-right: 30px;
+    text-align: center;
+    transition: all 300ms ease;
+  }
+  
+  .footer .group-1 .social-media a:hover {
+    color: #FF6E6C;
+  }
+  
+  .footer .group-2 {
+    background-color: #67568c;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .footer .group-2 small {
+    font-size: 13px;
+  }
+  
+  .footer-title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  
+  #reachus {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: #ffffff;
+  }
+  
+  #quicklinks ul {
+    display: flex;
+    color: #ffffff;
+    padding: 0;
+  }
 
-@media (max-width:800px) {
+  
+    #quicklinks ul li a {
+    color: #ffffff;
+  }
+
+  figure {
+    margin-top: 10px;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .footer .group-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+  }
+  
+/*========== MEDIA QUERIES ==========*/
+
+/*========== MAX 1240PX ==========*/
+@media (max-width:1240px) {
+   .box figure img {
+      width: 60px;
+      margin-right:20px; 
+      margin-top: 10px;
+    }
+  
+    figure {
+      margin-right: 0;
+      margin-top: 10px;
+      margin-left: 100px;
+    }
+  }
+  
+  /*========== MAX 900PX ==========*/
+  @media (max-width:900px) {
+  
+    .home__img{
+      width: 500px;
+    }
+
+    .post-content {
+        margin-top: 400px;
+    }
+  }
+  
+  
+
+  
+  /*========== MAX 800PX ==========*/
+  @media (max-width:800px) {
+
     .post-container {
         margin: 0 auto;
         width: 80%;
@@ -169,43 +461,38 @@ section {
     }
     
     .post-content {
-        margin-top: 23em;
+        margin-top: 450px;
     }
-}
+
+    figure {
+      margin: 0;
+    }
+  
+    #quicklinks ul li a {
+      padding: 0;
+      margin: 0;
+      margin-right: 60px;
+      font-size: 20px;
+    }
+  
+    #reachus {
+      margin: 0;
+    }
+  
+    
+    .footer .group-1 .social-media a {
+      font-size: 30px;
+      margin-right: 50px;
+    }
+  
+  }
+  
+   /*========== MAX 700PX ==========*/
 
 @media only screen and (max-width: 700px) {  
     .content {
         flex-direction: column;
         align-items: center;
-    }
-    .hamburger {
-        display: block;
-        z-index: 2;
-    }
-        header nav {
-        position: absolute;
-        width: 100%;
-        left: 0;
-        top: -100%;
-        width: 100%;
-        background: #fff;
-        padding: 30px;
-        transition: 0.3s;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        z-index: 1;
-    }
-        header #nav_check:checked ~ nav {
-        top: 0;
-    }
-        header nav ul {
-        display: block;
-        text-align: center;
-    }
-     header nav ul li a {
-        margin: 5px 0;
-        display: block;
     }
 
     .post-container {
@@ -222,11 +509,37 @@ section {
     }
     
     .post-content {
-        margin-top: 25em;
+        margin-top: 450px;
     }
     
 }
 
+
+  /*========== MAX 597PX ==========*/
+
+  @media only screen and (max-width: 597px) {  
+    
+
+
+    .header-title {
+        font-size: 40px;
+    }
+    
+}
+
+  /*========== MAX 580PX ==========*/
+  @media (max-width:580px) {
+    #quicklinks ul {
+      display: block;
+    }
+
+    .post-content {
+        margin-top: 490px;
+    }
+    
+}
+
+   /*========== MAX 550PX ==========*/
 @media (max-width:550px) {
     .post-container {
         margin: 0 auto;
@@ -242,7 +555,7 @@ section {
     }
     
     .post-content {
-        margin-top: 11em;
+        margin-top: 250px;
     }
 
     .header-title {
@@ -250,6 +563,9 @@ section {
     }
 }
 
+
+
+ /*========== MAX 463PX ==========*/
 @media (max-width:463px) {
     .post-container {
         margin: 0 auto;
@@ -261,7 +577,7 @@ section {
     }
     
     .post-content {
-        margin-top: 5.5em;
+        margin-top: 150px;
         padding: 0;
     }
 
@@ -282,9 +598,12 @@ section {
     }
 }
 
-@media (max-width:287px) { 
+  
+  
+/*========== MAX 365PX ==========*/
+@media (max-width:365px) { 
     .post-content {
-        margin-top: 9em;
+        margin-top: 140px;
         padding: 0;
     }
 
@@ -299,11 +618,46 @@ section {
     .header-content {
         padding-top: 20px;
     }
+
+    .date {
+        font-size: 14px;
+    }
 }
+  
+  
+  
+  @media (max-width:300px) {
+  
+    .footer .group-2 small {
+      font-size: 10px;
+    }
+  
+  }
+  
 
+  
+ /*========== MAX 280PX ==========*/
 
+@media (max-width:280px) { 
+    .post-content {
+        margin-top: 140px;
+        padding: 0;
+    }
 
+    .header-title {
+        font-size: 20px;
+    }
 
+    .back-blogs {
+        font-size: 10px;
+    }
 
+    .header-content {
+        padding-top: 20px;
+    }
 
+    .date {
+        font-size: 10px;
+    }
+}
 

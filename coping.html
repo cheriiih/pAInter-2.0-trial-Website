@@ -11,44 +11,48 @@
      <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
      <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
      <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
- 
+
+
 </head>
 
+<!--========== HEADER ==========-->
 <header>
+<div class="logo">
+    <img src="images/pinklogo.png" alt="pAInter Logo">
+    <a class="logo-title">pAInter</a>
+</a>
+</div>
 
-
-<body>
-    <div class="logo" id="painter">pAInter</div>
-    <input type="checkbox" id="nav_check" hidden>
 <nav>
+    <ul class="sidebar">
+        <li onclick="hideSidebar()"><a href="#"><i class="ri-close-line" id="nav-close"></i></a></li>
+        <li ><a href="index.html" class="navhome" >Home</a></li>
+        <li ><a href="service.html" class="navhome active">Service</a></li>
+        <li ><a href="blog.html" class="navhome">Blog</a></li>
+        <li ><a href="about.html" class="navhome">About</a></li>
+    </ul>
     <ul>
-        <li>
-            <a href="index.html">Home</a>
-        </li>
-        <li>
-            <a href="service.html" >Service</a>
-        </li>
-        <li>
-            <a href="blog.html" class="active" >Blog</a>
-        </li>
-        <li>
-            <a href="about.html" >About</a>
-        </li>
+        <li class="hideOnMobile"><a href="index.html" class="navhome" >Home</a></li>
+        <li class="hideOnMobile"><a href="service.html" class="navhome">Service</a></li>
+        <li class="hideOnMobile"><a href="blog.html" class="navhome active">Blog</a></li>
+        <li class="hideOnMobile"><a href="about.html" class="navhome">About</a></li>
+        <li onclick="showSidebar()"><a href="#"><i class="ri-menu-3-line" id="nav-menu"></i></a></li>
     </ul>
 </nav>
-<label for="nav_check" class="hamburger">
-    <div></div>
-    <div></div>
-    <div></div>
-</label>
-
 </header>
+
+<body>
+
+      <!--========== SCROLL TOP ==========-->
+      <a href="#" class="scrolltop" id="scroll-top">
+        <i class="ri-arrow-up-s-line scrolltop_icon"></i>
+    </a>
 
 <section class="post-header">
     <div class="header-content post-container">
         <a href="blog.html" class="back-blogs">Back to Blogs</a>
         <h1 class="header-title">The Inspiring Journeys of Artists Overcoming Burnout</h1>
-        <p class="date">January 1 2024 Cheri Ho</p>
+        <p class="date"> Published: January 1 2024 by Cheri Ho</p>
         <img src="images/coping.png" alt="" class="header-img">
     </div>
     
@@ -73,5 +77,39 @@
     </div>
 </div>
 
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer">
+            <div class="group-1">
+                <div class="box">
+                    <figure>
+                        <a href="#">
+                            <img src="images/painterlogo.png" alt="pAInter Logo">
+                            <a class="footer-title">pAInter</a>
+                        </a>
+                    </figure>
+                </div>
+                <div class="box" id="quicklinks">
+                    <ul>
+                        <li><a href="index.html" id="fhome">Home</a></li>
+                        <li><a href="service.html" id="fservice">Service</a></li>
+                        <li><a href="blog.html" id="fblog">Blog</a></li>
+                        <li><a href="about.html" id="fabout">About</a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h2 id="reachus">REACH US</h2>
+                    <div class="social-media">
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-google"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="group-2">
+                <small> 2024 - All drawings were made by <b>Cheri Ho</b>.</small>
+            </div>
+        </footer>
+
+        <script src="blog.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 * {
@@ -8,11 +8,8 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-}
-body {
-    background: #FFFFFF;
-}
 
+}
 /*========== HEADER ==========*/
 
 header {
@@ -54,11 +51,13 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
     padding-left: 10px;
     padding-right: 10px;
     background: #ffcc5d;
     border-radius: 20px;
-    z-index: var(--z-tooltip);
+    z-index: 999;
     transition: .4s;
     visibility: hidden;
   }
@@ -95,6 +94,10 @@ header {
   
   nav li {
     height: 40px;
+  }
+
+  .logo-title {
+    font-weight: 600;
   }
   
   
@@ -176,6 +179,129 @@ header {
   }
 
   
+/* Scroll top */
+.scrolltop{
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #ffcc5d;
+    border-radius: 20px;
+    z-index: 9999;
+    transition: .4s;
+    visibility: hidden;
+  }
+  
+  .scrolltop:hover{
+    background-color: #67568c;
+  }
+  
+  .scrolltop_icon {
+    font-size: 3em;
+    color: #ffffff;
+  }
+  
+  /* Show scrolltop */
+  .show-scroll{
+    visibility: visible;
+    bottom: 1.5rem;
+  }
+  
+  
+
+/*========== POST ==========*/
+
+   
+section {
+    position: relative;
+}
+
+.post-header {
+    width: 100%;
+    height: 300px;
+    background: #ff6e6c;
+}
+
+.post-container {
+    max-width: 800px;
+    margin: auto;
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3em;
+}
+
+.back-blogs {
+    color: #FFFFFF;
+    font-size: 1em; 
+   
+}
+
+.back-blogs:hover {
+    color: #67568c;
+}
+
+.header-title {
+    width: 90%;
+    font-size: 2.6em;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 20px;
+
+}
+
+.date {
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.header-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.post-content {
+    margin-top: 400px;
+}
+
+.sub-heading {
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+.post-text {
+    font-size: 1em;
+    line-height: 1.7em;
+    margin: 1em 0;
+    text-align: justify;
+    font-weight: 100;
+}
+
+.share {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1em;
+}
+
+.share-title {
+    font-size: 1.1em;
+    font-weight: 100;
+}
+
+
+
 /*========== FOOTER ==========*/
 .footer {
     width: 100%;
@@ -275,12 +401,11 @@ header {
     #quicklinks ul li a {
     color: #ffffff;
   }
-  
-  
+
   figure {
     margin-top: 10px;
   }
-
+  
   @media screen and (max-width: 800px) {
     .footer .group-1 {
         width: 90%;
@@ -297,12 +422,9 @@ header {
    .box figure img {
       width: 60px;
       margin-right:20px; 
-    
       margin-top: 10px;
     }
   
-    
-    
     figure {
       margin-right: 0;
       margin-top: 10px;
@@ -312,18 +434,36 @@ header {
   
   /*========== MAX 900PX ==========*/
   @media (max-width:900px) {
-   
   
     .home__img{
       width: 500px;
     }
-  
-   
+
+    .post-content {
+        margin-top: 400px;
+    }
   }
   
   
+
+  
   /*========== MAX 800PX ==========*/
   @media (max-width:800px) {
+
+    .post-container {
+        margin: 0 auto;
+        width: 80%;
+    }
+ 
+    .header-img {
+        width: 100%;
+        height: 400px;
+    }
+    
+    .post-content {
+        margin-top: 400px;
+    }
+
     figure {
       margin: 0;
     }
@@ -347,20 +487,141 @@ header {
   
   }
   
-  
+   /*========== MAX 700PX ==========*/
+
+@media only screen and (max-width: 700px) {  
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .post-container {
+        margin: 0 auto;
+        width: 80%;
+    }
+ 
+    .header-img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 10px;
+    }
+    
+    .post-content {
+        margin-top: 400px;
+    }
+    
+}
+
+
+  /*========== MAX 597PX ==========*/
+
+  @media only screen and (max-width: 597px) {  
+    
+
+
+    .header-title {
+        font-size: 40px;
+    }
+    
+}
+
   /*========== MAX 580PX ==========*/
   @media (max-width:580px) {
     #quicklinks ul {
       display: block;
     }
+
+   
+}
+
+   /*========== MAX 550PX ==========*/
+@media (max-width:550px) {
+    .post-container {
+        margin: 0 auto;
+        width: 80%;
+    }
+ 
+    .header-img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 10px;
+    }
     
+    .post-content {
+        margin-top: 220px;
+    }
+
+    .header-title {
+        font-size: 30px;
+    }
+}
+
+
+
+ /*========== MAX 463PX ==========*/
+@media (max-width:463px) {
+    .post-container {
+        margin: 0 auto;
+        width: 80%;
+    }
+ 
+    .header-img {
+        height: 200px;
+    }
+    
+    .post-content {
+        margin-top: 120px;
+        padding: 0;
+    }
+
+    .header-title {
+        font-size: 25px;
+    }
+
+    .back-blogs {
+        font-size: 10px;
+    }
+
+    .header-content {
+        padding-top: 20px;
+    }
+
+    .post-text {
+        font-size: 13px;
+    }
+}
+
+  
+  
+/*========== MAX 365PX ==========*/
+@media (max-width:365px) { 
+    .post-content {
+        margin-top: 100px;
+        padding: 0;
+    }
+
+    .header-title {
+        font-size: 20px;
+    }
+
+    .back-blogs {
+        font-size: 10px;
+    }
+
+    .header-content {
+        padding-top: 20px;
+    }
+
+    .date {
+        font-size: 14px;
+    }
 }
   
   
-  @media (max-width:380px) {
-    
-  
-  }
   
   @media (max-width:300px) {
   
@@ -368,169 +629,32 @@ header {
       font-size: 10px;
     }
   
-    #text2 {
-      font-size: 3em;
-    }
-
-  
   }
   
 
   
-  
-  
+ /*========== MAX 280PX ==========*/
 
-.about {
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    color: #ff6e6c;
-    justify-content: center;
-    align-items: center;
-}
-
-.content {
-    max-width: 1200px;
-    max-width: 95%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0 20px;
-    box-sizing: border-box;
-}
-
-.abouttext {
-    width: 550px;
-    max-width: 100%;
-    padding: 0 10px;
-}
-
-.about .content img {
-    height: auto;
-    width: 600px;
-    max-width: 100%;
-}
-
-#atext1 {
-    color: #67568c;
-    font-size: 60px;
-    margin-bottom: 20px;
-    text-transform: capitalize;
-}
-
-#atext2 {
-    color: #ff6e6c;
-    font-size: 25px;
-    margin-bottom: 25px;
-    text-transform: capitalize;
-    letter-spacing: 2px;
-}
-
-#atext3 {
-    color: #ff6e6c;
-    font-size: 15px;
-    line-height: 28px;
-    margin-bottom: 45px;
-    text-align: justify;
-}
-
-#abtn {
-    background-color: #ff6e6c;
-    font-size: 20px;
-    color: #ffffff;
-    border: 2px solid transparent;
-    text-decoration: none;
-    padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 20px;
-
-}
-
-#abtn:hover {
-    background-color: #67568c;
-    transition: 0.5s;
-}
-
-.missionvision-container {
-    margin-bottom: 80px;
-}
-
-@media screen and (max-width: 1300px) {
-    .about {
-        width: 100%;
-        height: auto;
-        padding: 70px 0px;
-        text-align: center;
-    }
-    #atext1 {
-        font-size: 60px;
-        padding-top: 30px;
-}
-
-.missionvision-container {
-    margin: 50px;
-}
-}
- 
-@media screen and (max-width: 500px) {
-    #atext1 {
-        font-size: 60px;
-        padding-top: 30px;
+@media (max-width:280px) { 
+    .post-content {
+        margin-top: 100px;
+        padding: 0;
     }
 
-    #atext1 {
-        font-size: 30px;
-    }
-
-    #atext2 {
+    .header-title {
         font-size: 20px;
     }
 
-    #atext3 {
-        font-size: 15px
+    .back-blogs {
+        font-size: 10px;
+    }
+
+    .header-content {
+        padding-top: 20px;
+    }
+
+    .date {
+        font-size: 10px;
+    }
 }
 
-   
-}
-
-
-.missionvision-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-.mvbox {
-    width: 500px;
-    background-color: #ff6e6c;
-    padding: 10px;
-    margin: 20px;
-    border-radius: 10px;
-}
-
-.text {
-    padding: 20px;
-    padding-bottom: 80px;
-    display: flex;
-    flex-direction: column;
-}
-
-
-.text .title {
-    font-size: 1.3em;
-    font-weight: 500;
-    color: #ffffff;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.text p {
-    color: #ffffff;
-    font-size: 0.8em;
-    margin: 20p 0px;
-}

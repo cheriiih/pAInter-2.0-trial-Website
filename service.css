@@ -13,6 +13,7 @@ body {
     background: #FFFFFF;
 }
 
+
 /*========== HEADER ==========*/
 
 header {
@@ -275,12 +276,11 @@ header {
     #quicklinks ul li a {
     color: #ffffff;
   }
-  
-  
+
   figure {
     margin-top: 10px;
   }
-
+  
   @media screen and (max-width: 800px) {
     .footer .group-1 {
         width: 90%;
@@ -297,12 +297,9 @@ header {
    .box figure img {
       width: 60px;
       margin-right:20px; 
-    
       margin-top: 10px;
     }
   
-    
-    
     figure {
       margin-right: 0;
       margin-top: 10px;
@@ -368,169 +365,19 @@ header {
       font-size: 10px;
     }
   
-    #text2 {
-      font-size: 3em;
-    }
-
-  
   }
   
 
   
-  
-  
 
-.about {
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    color: #ff6e6c;
-    justify-content: center;
-    align-items: center;
-}
 
-.content {
-    max-width: 1200px;
-    max-width: 95%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0 20px;
-    box-sizing: border-box;
-}
-
-.abouttext {
-    width: 550px;
-    max-width: 100%;
-    padding: 0 10px;
-}
-
-.about .content img {
-    height: auto;
-    width: 600px;
-    max-width: 100%;
-}
-
-#atext1 {
-    color: #67568c;
-    font-size: 60px;
-    margin-bottom: 20px;
-    text-transform: capitalize;
-}
-
-#atext2 {
-    color: #ff6e6c;
-    font-size: 25px;
-    margin-bottom: 25px;
-    text-transform: capitalize;
-    letter-spacing: 2px;
-}
-
-#atext3 {
-    color: #ff6e6c;
-    font-size: 15px;
-    line-height: 28px;
-    margin-bottom: 45px;
-    text-align: justify;
-}
-
-#abtn {
-    background-color: #ff6e6c;
-    font-size: 20px;
-    color: #ffffff;
-    border: 2px solid transparent;
-    text-decoration: none;
-    padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 20px;
-
-}
-
-#abtn:hover {
-    background-color: #67568c;
-    transition: 0.5s;
-}
-
-.missionvision-container {
-    margin-bottom: 80px;
-}
 
 @media screen and (max-width: 1300px) {
-    .about {
-        width: 100%;
-        height: auto;
-        padding: 70px 0px;
-        text-align: center;
-    }
-    #atext1 {
-        font-size: 60px;
-        padding-top: 30px;
-}
 
-.missionvision-container {
-    margin: 50px;
-}
 }
  
 @media screen and (max-width: 500px) {
-    #atext1 {
-        font-size: 60px;
-        padding-top: 30px;
-    }
-
-    #atext1 {
-        font-size: 30px;
-    }
-
-    #atext2 {
-        font-size: 20px;
-    }
-
-    #atext3 {
-        font-size: 15px
-}
-
    
 }
 
-
-.missionvision-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-.mvbox {
-    width: 500px;
-    background-color: #ff6e6c;
-    padding: 10px;
-    margin: 20px;
-    border-radius: 10px;
-}
-
-.text {
-    padding: 20px;
-    padding-bottom: 80px;
-    display: flex;
-    flex-direction: column;
-}
-
-
-.text .title {
-    font-size: 1.3em;
-    font-weight: 500;
-    color: #ffffff;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.text p {
-    color: #ffffff;
-    font-size: 0.8em;
-    margin: 20p 0px;
-}
+   
