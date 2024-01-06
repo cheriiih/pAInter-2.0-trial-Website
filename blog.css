@@ -99,18 +99,19 @@ header {
   }
   
   
-  .navhome{
-    display: inline-block;
-    color: #ff6e6c;
-    padding: 5px 25px;
-    margin: 0 10px;
-    border: 3px solid transparent;
-    text-transform: uppercase;
-    transition: 0.2s;
-    border-radius: 20px;
-    font-weight: 600;
-    border: 0;
-  }
+.navhome{
+  display: inline-block;
+  color: #ff6e6c;
+  font-size: 20px;
+  padding: 15px 35px;
+  margin: 0 10px;
+  border: 3px solid transparent;
+  text-transform: uppercase;
+  transition: 0.2s;
+  border-radius: 30px;
+  font-weight: 600;
+  border: 0;
+}
   
   .sidebar {
     position: absolute;
@@ -128,8 +129,10 @@ header {
     justify-content: flex-start;
   }
   
+ 
   .sidebar li{
     width: 100%;
+    margin-top: 20px;
   }
   
   

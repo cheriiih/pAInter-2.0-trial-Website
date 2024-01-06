@@ -23,6 +23,7 @@ header {
     z-index: 1000;
     position: relative;
     margin-top: 10px;
+    margin-bottom: 25px;
   }
   header .logo {
     font-size: 2em;
@@ -108,12 +109,13 @@ header {
   .navhome{
     display: inline-block;
     color: #ff6e6c;
-    padding: 5px 25px;
+    font-size: 20px;
+    padding: 15px 35px;
     margin: 0 10px;
     border: 3px solid transparent;
     text-transform: uppercase;
     transition: 0.2s;
-    border-radius: 20px;
+    border-radius: 30px;
     font-weight: 600;
     border: 0;
   }
@@ -134,8 +136,10 @@ header {
     justify-content: flex-start;
   }
   
+ 
   .sidebar li{
     width: 100%;
+    margin-top: 20px;
   }
   
   
@@ -279,9 +283,11 @@ section {
     margin-top: 400px;
 }
 
+
 .sub-heading {
     font-size: 1.2em;
     font-weight: 800;
+    margin-top: 40px;
 }
 
 .post-text {
@@ -297,11 +303,16 @@ section {
     flex-direction: column;
     align-items: center;
     row-gap: 1em;
+    font-size: 15px;
 }
 
 .share-title {
     font-size: 1.1em;
     font-weight: 100;
+}
+
+#sourceslink {
+  color: #67568c;
 }
 
 
@@ -453,10 +464,16 @@ section {
   
   /*========== MAX 800PX ==========*/
   @media (max-width:800px) {
+    
 
     .post-container {
         margin: 0 auto;
         width: 80%;
+    }
+
+    .share .post-container {
+      width: 100%;
+      overflow: hidden;
     }
  
     .header-img {
