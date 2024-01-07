@@ -40,14 +40,49 @@
     </nav>
 </header>
 
-<body>
-    
-<section class="about">
-    <h2 >HOLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</h2>
-    <h2 >HOLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</h2>
-    <h2 >HOLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</h2>
-    <h2 >HOLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</h2>
-</section>
+     
+      <body>
+        <div>
+          <h2 class="paintertitle">Try pAInter!</h2>
+          <div class="absolute inset-4 ">
+            <div
+              class="center-div relative h-full w-full overflow-clip rounded-md border border-zinc-200 bg-white p-2 px-0 py-0"
+            >
+              <iframe
+              width="100%" height="100%"
+                style="border: none;"
+                srcdoc="<body><script src='https://cdn.botpress.cloud/webchat/v0/inject.js'></script>
+                <script>
+                  window.botpressWebChat.init({
+                      'composerPlaceholder': 'Chat with pAInter!',
+                      'botConversationDescription': 'The best personalized creative exercises!',
+                      'botName': 'pAInter',
+                      'botId': 'bbbef50b-0168-4bd2-babb-2c39fc2295c3',
+                      'hostUrl': 'https://cdn.botpress.cloud/webchat/v0',
+                      'messagingUrl': 'https://messaging.botpress.cloud',
+                      'clientId': 'bbbef50b-0168-4bd2-babb-2c39fc2295c3',
+                      'enableConversationDeletion': true,
+                      'showPoweredBy': true,
+                      'className': 'webchatIframe',
+                      'containerWidth': '100%25',
+                      'layoutWidth': '100%25',
+                      'hideWidget': true,
+                      'showCloseButton': false,
+                      'disableAnimations': true,
+                      'closeOnEscape': false,
+                      'showConversationsButton': false,
+                      'enableTranscriptDownload': false,
+                     
+                  });
+                window.botpressWebChat.onEvent(function () { window.botpressWebChat.sendEvent({ type: 'show' }) }, ['LIFECYCLE.LOADED']);
+                </script></body>"
+                
+              ></iframe>
+            </div>
+          </div>
+        </div>
+     
+  
     
         <!--========== FOOTER ==========-->
         <footer class="footer">
@@ -82,6 +117,6 @@
         </footer>
 
         <script src="service.js"></script>
+    </body>
 
-</body>
 </html>
