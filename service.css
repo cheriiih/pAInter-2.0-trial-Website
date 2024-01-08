@@ -149,7 +149,7 @@ header {
   }
   
   
-  .navindex{
+  .navhome{
     display: inline-block;
     color: #ff6e6c;
     font-size: 20px;
@@ -200,7 +200,7 @@ header {
     
   }
   
-  .navindex:hover, header nav ul li a.active {
+  .navhome:hover, header nav ul li a.active {
     background-color: #ff6e6c;
     color: #FFFFFF;
   }
@@ -447,7 +447,7 @@ header {
   @media (max-width:900px) {
    
   
-    .index__img{
+    .home__img{
       width: 500px;
     }
   
