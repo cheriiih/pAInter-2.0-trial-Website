@@ -14,6 +14,10 @@
 
 </head>
 
+<a href="#" class="scrolltop" id="scroll-top">
+    <i class="ri-arrow-up-s-line scrolltop_icon"></i>
+</a>
+
   <!--========== HEADER ==========-->
   <header>
     <div class="logo">
@@ -83,7 +87,26 @@
           </div>
         </div>
      
-  
+        <div class="survey-container">
+            <button type="submit" class="reviewbtn" onclick="openPopup()">Leave Feedback </button>
+            <div class="popup" id="popup">
+                <h2>Your Opinion Matters!</h2>
+                <a href="https://forms.gle/bzzZiuQbNwkqYsDU7">Please fill this survey!</a>
+                <button type="button" onclick="closePopup()">Done</button>
+            </div>
+        </div>
+    
+        <script>
+            let popup = document.getElementById("popup");
+    
+            function openPopup () {
+                popup.classList.add("open-popup");
+            }
+    
+            function closePopup () {
+                popup.classList.remove("open-popup");
+            }
+        </script>
     
         <!--========== FOOTER ==========-->
         <footer class="footer">
