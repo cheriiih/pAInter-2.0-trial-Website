@@ -117,40 +117,22 @@ img{
 }
 
 /*========== LOADER ==========*/
-.loader {
-  display: flex;
-  align-items: center;
+
+#preloader {
+  background: #ffffff url(images/loader.gif) no-repeat center;
+  background-size: 30%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
 }
 
-.bar {
-  display: inline-block;
-  width: 3px;
-  height: 20px;
-  background-color: rgba(255, 255, 255, .5);
-  border-radius: 10px;
-  animation: scale-up4 1s linear infinite;
+#preloader.hidden {
+  opacity: 0;
 }
 
-.bar:nth-child(2) {
-  height: 35px;
-  margin: 0 5px;
-  animation-delay: .25s;
-}
-
-.bar:nth-child(3) {
-  animation-delay: .5s;
-}
-
-@keyframes scale-up4 {
-  20% {
-    background-color: #ffff;
-    transform: scaleY(1.5);
-  }
-
-  40% {
-    transform: scaleY(1);
-  }
-}
 /*========== HEADER ==========*/
 
 header {

@@ -19,11 +19,16 @@
 </a>
 
  <!--========== LOADER ==========-->
- <div class="loader">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
+ <div id="preloader">
 </div>
+
+<script>
+    var loader = document.getElementById("preloader");
+
+    window.addEventListener("load", function() {
+    loader.style.display = "none";
+    })
+</script>
 
   <!--========== HEADER ==========-->
   <header>

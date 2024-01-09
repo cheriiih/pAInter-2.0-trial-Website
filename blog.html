@@ -17,12 +17,17 @@
         <i class="ri-arrow-up-s-line scrolltop_icon"></i>
     </a>
 
-     <!--========== LOADER ==========-->
-     <div class="loader">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+    <!--========== LOADER ==========-->
+    <div id="preloader">
     </div>
+
+    <script>
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function() {
+        loader.style.display = "none";
+        })
+    </script>
     
   <!--========== HEADER ==========-->
   <header>
