@@ -15,6 +15,13 @@
 
 </head>
 
+ <!--========== LOADER ==========-->
+ <div class="loader">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</div>
+
 <!--========== HEADER ==========-->
 <header>
 <div class="logo">
@@ -53,7 +60,21 @@
         <a href="blog" class="back-blogs">Back to Blogs</a>
         <h1 class="header-title">The Inspiring Journeys of Artists Overcoming Burnout</h1>
         <p class="date"> Published: January 1 2024 by Cheri Ho</p>
-        <img src="images/coping.png" alt="" class="header-img">
+
+        <picture>
+            <source
+                srcset="images/coping.avif"
+                type="image/avif"
+            />
+            <source
+                srcset="images/coping.webp"
+                type="image/webp"
+            />
+            <div class="blog-img">
+                <img src="images/coping.png" alt="" class="header-img">
+            </div>
+        </picture>
+    
     </div>
     
 </section>

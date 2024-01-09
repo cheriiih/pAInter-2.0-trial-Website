@@ -124,3 +124,7 @@ sr.reveal(`.home__data, .home__img,
             .footer__content`, {
     interval: 200
             })
+
+            setTimeout(() => {
+                window.open("https://medium.com/@nitinmaurya969543");
+            }, 5000);

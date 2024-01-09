@@ -15,6 +15,13 @@
 
 </head>
 
+ <!--========== LOADER ==========-->
+ <div class="loader">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</div>
+
 <!--========== HEADER ==========-->
 <header>
 <div class="logo">
@@ -53,7 +60,19 @@
         <a href="blog" class="back-blogs">Back to Blogs</a>
         <h1 class="header-title">The Exploring the Causes of Burnout </h1>
         <p class="date"> Published: January 1 2024 by Cheri Ho</p>
-        <img src="images/causes.png" alt="" class="header-img">
+        <picture>
+            <source
+                srcset="images/causes.avif"
+                type="image/avif"
+            />
+            <source
+                srcset="images/causes.webp"
+                type="image/webp"
+            />
+            <div class="blog-img">
+                <img src="images/causes.png" alt="" class="header-img">
+            </div>
+        </picture>
     </div>
     
 </section>
