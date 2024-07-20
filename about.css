@@ -487,7 +487,6 @@ header {
     #reachus {
       margin: 0;
     }
-  
     
     .footer .group-1 .social-media a {
       font-size: 30px;
@@ -519,13 +518,27 @@ header {
       display: block;
     }
     .team-section .container {
-      padding: 0 29px;
+      padding: 0 30px;
         
     }
+
+    .team-section .container .row .title h1 {
+      font-size: 34px;
+    }
     .team-section .container .row .title p {
-      font-size: 20px;
+      font-size: 18px;
       margin: 30px 0px;
     }
+    .team-section .container .team-card .card .content p {
+      font-size: 15px;
+    }
+
+    .team-section .container .team-card .card .content h4 {
+      font-size: 20px;
+      margin: 0;
+    }
+  
+   
     
 }
   
@@ -572,6 +585,7 @@ header {
     justify-content: space-around;
     padding: 0 20px;
     box-sizing: border-box;
+    margin-top: 50px;
 }
 
 .abouttext {
@@ -634,7 +648,6 @@ header {
     .about {
         width: 100%;
         height: auto;
-        padding: 100px 0px;
         text-align: center;
     }
     #atext1 {
@@ -667,9 +680,7 @@ header {
         font-size: 19px;
         text-align: center ;
 
-    .abouttext {
-      padding: 0px;
-    }
+  
         
         
 }
